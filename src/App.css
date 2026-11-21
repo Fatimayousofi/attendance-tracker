@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.summary div {
+    flex: 1;
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.summary h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form button {
+    background: #1e3a5f;
+    color: white;
+}
+
+.form button:hover {
+    background: #2563eb;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.present {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.absent {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+}
